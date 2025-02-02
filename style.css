@@ -1,0 +1,368 @@
+/* Общие стили */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'font', sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1700px;
+    /* при установке ширины контейнера надо задать ширину + паддинги */
+    /* паддинги нужны чтобы верстка не прилипала к краям  */
+    padding: 0 35px;
+    margin: 0 auto;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.flex {
+    display: flex;
+}
+
+/* Верхнее меню */
+
+
+
+.logo {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.header__top {
+    margin-left: 315px;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(97, 77, 73);
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.logo {
+    width: 392px;
+    display: inline-block;
+
+}
+
+.nav__item {
+    background: rgb(97, 77, 73);
+    text-decoration: none;
+    padding: 18px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.item1 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #7C6E6B;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    background: rgb(217, 217, 217);
+    padding: 18px 94px 18px 48px;
+}
+
+.nav__item-link {
+    display: inline-block;
+
+}
+
+
+
+.header-btn {
+    color: white;
+    padding: 15px 45px;
+    border-radius: 4px;
+    background: rgb(49, 19, 17);
+    margin-right: 37px;
+}
+
+.contacts {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 28px;
+}
+
+.search-btn {
+    background: rgb(97, 77, 73);
+    outline: none;
+    border: none;
+    margin-right: 40px;
+}
+
+.lang {
+    color: rgb(211, 200, 187);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+/* Нижнее меню */
+.header__bottom {
+    align-items: center;
+    margin-left: 287px;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: rgb(217, 217, 217);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.submenu__item {
+    padding: 18px 20px;
+    align-items: center;
+}
+
+.submenu__list {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    padding-left: 43px;
+}
+
+
+
+.submenu__item {
+
+    color: rgb(80, 61, 58);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 6px 10px;
+}
+
+/* .submenu__item--highlight a {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+} */
+
+.submenu__item--highlight {
+    display: inline-block;
+    transform: skewX(-30deg);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(178, 31, 36);
+
+
+}
+
+.link {
+    padding: 6px 50px;
+    display: inline-block;
+    transform: skewX(30deg);
+}
+
+.hero {
+    padding-top: 15px;
+    padding-bottom: 130px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero-btn {
+    position: absolute;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    left: 255px;
+
+    left: 120px;
+    padding: 29px 118px;
+}
+
+.svg {
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+.hero__bottom {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 880px;
+    height: 215px;
+    bottom: -100px;
+    position: absolute;
+    right: -351px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.about {
+    background-color: #F4F4F2;
+    padding-top: 65px;
+
+}
+
+.about__title-top {
+    padding: 0;
+}
+
+.about__title-bottom {
+    padding: 0;
+}
+
+.about__top-left {
+    position: relative;
+
+    margin-right: 40px;
+    margin-bottom: 89px;
+}
+
+.about-btn-top {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    /* z-index: 1; */
+    padding: 21px 44px;
+    bottom: 20px;
+    right: 0;
+    align-items: center;
+}
+
+.about-image {
+    height: 475px;
+    width: 926px;
+}
+
+.about__top-right {
+    width: 663px;
+}
+
+.title-top {
+    margin: 0;
+}
+
+.about__bottom-left {
+    width: 663px;
+    margin-right: 40px;
+
+}
+
+.about__bottom-right {
+    position: relative;
+    margin-bottom: 89px;
+}
+
+.about-btn-bottom {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    /* z-index: 1; */
+    padding: 21px 44px;
+    bottom: 20px;
+    right: 0;
+    align-items: center;
+}
+
+.sn {
+    padding-top: 130px;
+}
+
+
+.sn__container {
+    position: relative;
+    height: 860px;
+    width: 1630px;
+    background-image: url(image/3d-rendering-hydraulic-elements.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sn-btn {
+    position: absolute;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    left: 255px;
+    left: 120px;
+    padding: 29px 118px;
+}
+
+.sn__bottom {
+    background-color: rgb(255, 255, 255);
+    width: 880px;
+    height: 215px;
+    bottom: -110px;
+    position: absolute;
+    right: -426px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+.sn__title {
+    margin: 0;
+}
