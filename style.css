@@ -245,7 +245,6 @@ body {
 }
 
 .svg {
-    padding-top: 5px;
     margin-left: 20px;
 }
 
@@ -365,4 +364,92 @@ body {
 
 .sn__title {
     margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 96px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sn__text {
+    width: 584px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+
+.projects {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+}
+
+.projects__container {
+    position: relative;
+    background: rgb(191, 173, 155);
+}
+
+.projects__content {
+    width: 648px;
+    padding-top: 86px;
+    padding-left: 73px;
+    padding-bottom: 79px;
+}
+
+.projects__text {
+
+    margin: 0;
+    margin-bottom: 37px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.projects__btn {
+    background-color: red;
+    left: 255px;
+    left: 120px;
+    padding: 24px 41px;
+    transform: skewX(-30deg);
+}
+
+.btn-text {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    transform: skewX(30deg);
+}
+
+.svg-btn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    transform: skewX(30deg);
+}
+
+.ellips {
+    position: absolute;
+    width: 1148px;
+    height: 1148px;
+    right: -313px;
+    bottom: -693px;
+    border-radius: 50%;
+    filter: blur(278.5px);
+    background: linear-gradient(-32.59deg, rgba(242, 241, 240, 0.92) 73.211%, rgba(170, 146, 122, 0.92) 112.69%);
+}
+
+
+.footer {
+    position: relative;
+}
+
+hr {
+    margin: 0;
+    background-color: linear-gradient(rgb(235, 232, 229), rgb(211, 200, 187));
+    height: 3px;
+    z-index: 1;
 }
