@@ -447,9 +447,51 @@ body {
     position: relative;
 }
 
+.footer__container {
+    padding-top: 93px;
+}
+
 hr {
     margin: 0;
-    background-color: linear-gradient(rgb(235, 232, 229), rgb(211, 200, 187));
+    background: linear-gradient(rgb(235, 232, 229), rgb(211, 200, 187));
     height: 3px;
     z-index: 1;
 }
+
+.footer__nav {
+    min-width: 803px;
+
+    padding-left: 318px;
+    margin-right: 102px;
+    gap: 97px;
+}
+
+.footer__list {
+    width: 203px;
+}
+
+.maps {
+    position: relative;
+    width: 406px;
+    height: 369px;
+
+}
+
+.maps__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 125px;
+    left: 138px;
+}
+
+.maps__btn {
+    
+    background-color: red;
+    padding: 24px 41px;
+    transform: skewX(-30deg);
+    
+
+}
+
+
