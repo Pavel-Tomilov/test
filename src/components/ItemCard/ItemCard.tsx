@@ -4,18 +4,23 @@ import "./ItemCard.css";
 interface ItemProps {
   text: string;
   onDelete: () => void;
+  isInitial: boolean;
 }
 
-const ItemCard: React.FC<ItemProps> = ({ text, onDelete }) => {
+const ItemCard: React.FC<ItemProps> = ({ text, onDelete, isInitial }) => {
   return (
-    <li className="item">
+    <li className={`item ${isInitial ? "initial-item" : ""}`}>
       <span className="item-text">{text}</span>
-      <button
-        onClick={onDelete}
-        className="delete-button"
-      >
-        Удалить
-      </button>
+
+      {!isInitial && (
+        <button
+          onClick={onDelete}
+          className="delete-button"
+          aria-label="Удалить"
+        >
+          <span>Удалить</span>
+        </button>
+      )}
     </li>
   );
 };
