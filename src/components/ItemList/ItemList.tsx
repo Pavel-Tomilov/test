@@ -1,6 +1,6 @@
 import React from "react";
 import "./ItemList.css";
-import ItemCard from "../../ItemCard/ItemCard";
+import ItemCard from "../ItemCard/ItemCard";
 
 interface ItemListProps {
   items: string[];
